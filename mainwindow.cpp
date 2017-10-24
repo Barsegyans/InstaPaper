@@ -89,7 +89,7 @@ void MainWindow::on_pushButton_Copy_clicked()
     if( QClipboard* c = QApplication::clipboard() ) {
             c->disconnect( this );
             c->setText( ui->textEdit->textCursor().selectedText() );
-            ui->pushButton_Paste->setEnabled(true);
+            ui->pushButton_Paste->setEnabled(true);     
         }
 }
 
@@ -191,6 +191,8 @@ void MainWindow::on_textEdit_textChanged()
     isChanged=true;
     isSaved=false;
     this->setWindowTitle("*"+m_name+" - InstaPaper");
+    if( QClipboard* c = QApplication::clipboard())
+    ui->pushButton_Paste->setEnabled(!c->text().isEmpty());
 
 }
 
