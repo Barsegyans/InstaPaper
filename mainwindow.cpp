@@ -292,7 +292,7 @@ void MainWindow::on_action_About_programm_triggered()
        qFatal("Couldn't open file ");
    }
    QTextStream in(&f);
-   QMessageBox::about(this, "Title", in.readAll());
+   QMessageBox::about(this, "About programm", in.readAll());
    f.close();
 }
 
