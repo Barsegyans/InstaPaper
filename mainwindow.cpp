@@ -156,7 +156,7 @@ void MainWindow::on_pushButton_Close_clicked()
 }
 
 void MainWindow::closeEvent(QCloseEvent *event){
-    if(!isChanged)
+    if(!isChanged || (m_path.isEmpty()&&ui->textEdit->toPlainText().isEmpty()))
     {
         event->accept();
     }

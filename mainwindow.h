@@ -11,8 +11,8 @@
 #include <QFont>
 #include <QFontDialog>
 #include <QSettings>
-#include<QUndoCommand>
-#include<QUndoStack>
+#include <QUndoCommand>
+#include <QUndoStack>
 
 
 namespace Ui {

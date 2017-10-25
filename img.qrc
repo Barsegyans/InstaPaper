@@ -17,6 +17,5 @@
         <file>icons/inf2.png</file>
         <file>icons/wi.ico</file>
         <file>about.txt</file>
-        <file>Font.txt</file>
     </qresource>
 </RCC>
